@@ -1,0 +1,40 @@
+.app {
+    &.login {
+        justify-content: center;
+        align-items: center;
+        form {
+            width: 30%;
+            max-width: 100%;
+            h1 {
+                color: $header;
+                font-family: $header-font;
+                text-align: center;
+            }
+            input[type=text],input[type=password], button {
+                display: block;
+                width: 100%;
+                border: 1px solid #eee;
+                padding: 1rem;
+                margin: 1rem 0;
+                border-radius: $radius;
+                &:disabled {
+                    cursor: not-allowed;
+                }
+            }
+            button {
+                background: $admin-nav-bg;
+                color: #fff;
+                font-size: 1rem;
+                font-family: $header-font;
+                cursor: pointer;
+            }
+            .error {
+                padding: 1rem 0;
+                font-family: $header-font;
+                display: block;
+                text-align: center;
+
+            }
+        }
+    }
+}
